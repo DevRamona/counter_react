@@ -2,10 +2,11 @@ import { useState } from 'react'
 import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import './App.css'
+import Form from './Components/Form'
 
 function App() {
   const [count, setCount] = useState(0)
-  const [notification, setNotification] = useState([])
+  const [notification, setNotification] = useState(["1","2","3","4"])
 
   // function updateNotifications () {
   //   setNotification(prevNotification => !prevNotification)
@@ -33,14 +34,17 @@ function App() {
 
    
     </div>
-    <div>
+    {/* <div>
        {
       notification.length === 0 ?
       <h6>You're all caught up!</h6> :
       <h6>You have {notification.length} unread {notification.length > 1 ? "notifications" : "notification"}</h6>
         }
     
-    </div>
+    </div> */}
+
+    <Form/>
+    
    
     
       
